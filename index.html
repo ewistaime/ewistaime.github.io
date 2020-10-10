@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        #logo {
+            width: 150px;
+            height: 40px;
+        }
+
+        .text-item {
+            font-size: 25px;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+        }
+
+        .map-ketersedian {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-promo {
+            width: auto;
+            height: 450px;
+            border-radius: 5px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: gray;
+        }
+
+        .card-promo:hover {
+            top: 5px;
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, .6);
+        }
+
+        .card-program {
+            width: auto;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 18px;
+            font-weight: 600;
+            color: gray;
+        }
+
+        .card-produk>p {
+            color: gray;
+        }
+
+        .card-produk>p:hover {
+            color: white;
+        }
+
+        .card-produk:hover {
+            top: 5px;
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, .6);
+            background-color: #e53e2c;
+            color: white;
+        }
+
+        .baku-bantu {
+            background-color: white;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+
+        .list-group-item:hover {
+            background-color: #e53e2c;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            background-color: #e53e2c;
+            color: white;
+        }
+
+        a.active {
+            background-color: #e53e2c;
+        }
+    </style>
+
+    <title>IndiHome Papua</title>
+</head>
+
+<body style="font-family:georgia,garamond,serif;">
+
+    <!-- navigasi bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/indihome.png" id="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-1">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#produk">Produk</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#program">Program Promo</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#bantu">Baku Bantu</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#kontak">Kontak Kitong</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navigasi bar -->
+
+    <!-- Tampilan home  -->
+    <div class="baner" id="home">
+
+        <div class="container pt-4 mt-5 pb-3">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6 img-item">
+                                <img src="assets/img/1.jpg" width="470px" height="350px">
+                            </div>
+                            <div class="col-md-6 text-item text-left">
+                                Pace Mace, kitong pu kebutuhan digital su ada di sini! Mulai dari Akses internet stabil,
+                                Telepon rumah jernih, Tayangan TV Interaktif populer dengan kitong pu IndiHome!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 text-item text-right">
+                                Dengan daftar jadi SOBAT INDIHOME, Pace Mace yang suka promosi IndiHome bisa dapat
+                                banyak keuntungan, di antaranya bisa upgrade skill baru lewat berbagai webinar, koneksi
+                                makin luas, bahkan bisa dapat INCENTIVE FEE atau uang insentif!
+                            </div>
+                            <div class="col-md-6 img-item">
+                                <img src="assets/img/2.jpg" width="500px" height="350px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-6">
+                    <img src="assets/img/3.jpg" width="500px" height="450px">
+                </div>
+                <div class="col-md-6 map-ketersedian">
+                    <a href="https://indihome.co.id/berlangganan-baru/cek-ketersediaan" target="_blank">
+                        <img src="assets/img/4.jpg" width="500px" height="450px">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Tampilan home  -->
+
+    <!-- Tampilan Produk -->
+    <div class="content-produk pt-3 pb-4" id="produk" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-promo p-3"
+                        style="display: flex; flex-direction: column; justify-content: flex-start;">
+                        <span style="font-size: 12px; text-align: center; color: black;"> Pace Mace pelajari dulu paket
+                            dan produk
+                            Indihome! Siapa tau ada
+                            yang kena di hati! Iyo
+                            toh?</span>
+                        <p class="pt-2" style="text-align: start;">
+                            Kecepatan Internet<br>
+                            <strong style="color: black; font-weight: 300;">Up to 20Mbps</strong>
+                        </p>
+                        <p class="pt-2" style="text-align: start;">
+                            Telepon<br>
+                            <strong style="color: black; font-weight: 300;">Menit gratis 300 Menit</strong>
+                        </p>
+                        <p class="pt-2" style="text-align: center; color: green;">
+                            Free<br>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="assets/img/bebas-300-menit.jpg" width="70px" height="35px">
+                            <img src="assets/img/indihome-music.jpg" width="70px" height="35px">
+                            <img src="assets/img/indihome-study.jpg" width="70px" height="35px">
+                            <img src="assets/img/cloud-storage.jpg" width="70px" height="35px">
+                        </div>
+                        </p>
+                        <p style="text-align: start; font-size: 18px;">
+                            Rp 345.000 /bulan
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-9" style="background-color: #5dc1a7;">
+                    <div class="row">
+                        <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="text-center p-3" style="font-size: 20px; color: white; font-weight: bold;">
+                                Pace Mace sudah tahu kah kalau kecepatan 10Mbps cuma batas maksimum 3 orang dan kalo
+                                sudah
+                                lebih
+                                yang pakai internet akan jadi lambat?
+                                Mari Pace Mace kitong lihat dan pelajari kitong pu kebutuhan!
+                            </div>
+                        </div>
+                        <div class="col-md-6 img-item">
+                            <img src="assets/img/5.png" width="350px" height="400px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-3" style="display: flex; justify-content: center; align-items: center; font-size: 22px;">
+                Pace mace su tau layanan tambahan IndiHome kah?
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-produk">
+                            <h5 class="text-center" style="font-size: 25px;">Kategori Internet</h5>
+                            <span>Wifi.id Seamless</span><br>
+                            <p class="pt-2" style="font-size: 15px;">Yang ini nih cocok untuk pace mace
+                                yang mau
+                                internetan di mana saja
+                                dengan jaringan Wifi.id di seluruh </p>
+                            <p>
+                                <a href="#">Info detail ></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-produk">
+                            <h5 class="text-center" style="font-size: 25px;">Kategori TV</h5>
+                            <span>Minipack ChannelTV</span><br>
+                            <p class="pt-2" style="font-size: 15px;">Tambah channel-channel yang pace mace
+                                suka!</p>
+                            <span>Hybrid Box (STB) Tambahan dan PLC</span><br>
+                            <p class="pt-2" style="font-size: 15px;">TPace mace ada TV dua di rumah? Bisa
+                                nonton IndiHome lewat dua TV dalam waktu bersamaan! Mau?</p>
+                            <span>Catchplay+</span><br>
+                            <p class="pt-2" style="font-size: 15px;">Tra bisa ke bioskop lagi padahal suka
+                                sekali nonton bioskop? Pace mace masih bisa dapat bioskop pribadi selama 24 jam sehari
+                            </p>
+                            <p>
+                                <a href="#">Info detail ></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-produk">
+                            <h5 class="text-center" style="font-size: 25px;">Kategori Telepon</h5>
+                            <span>Movin’</span><br>
+                            <p class="pt-2" style="font-size: 15px;">Dengan Movin’ pace mace gampang mo
+                                atur tayangan TV, panggilan telepon dan akses internetan dari gadget atau smartphone.
+                            </p>
+                            <p>
+                                <a href="#">Info detail ></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-produk">
+                            <h5 class="text-center" style="font-size: 25px;">Kategori Lainnnya</h5>
+                            <span>IndiHome Study</span><br>
+                            <p class="pt-2" style="font-size: 15px;">Wah ini paling bagus untuk anak-anak
+                                sekolah! Bisa akses macam-macam materi pelajaran mulai dari siswa SD sampai SMA!
+                            </p>
+                            <p>
+                                <a href="#">Info detail ></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Tampilan Produk -->
+
+    <!-- Tampilan Program Promo -->
+    <div class="content-program pt-3 pb-4" id="program">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-6 img-item">
+                        <img src="assets/img/6.jpg" width="450px" height="550px">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-program text-left p-3">
+                        <p>
+                            Pace Mace pernah promosi Indihome ke keluarga, tetangga, atau teman dan orang itu langganan
+                            indihome? Atau Pace Mace suka orang lain juga berlangganan? Waaaahhh… Pace Mace harus daftar
+                            program SOBAT INDIHOME di <a href="http://sobat.indihome.co.id"
+                                target="_blank">sobat.indihome.co.id</a>!
+                        </p>
+                        <br>
+                        <p>
+                            Dengan daftar jadi SOBAT INDIHOME, Pace Mace yang suka promosi IndiHome bisa dapat banyak
+                            keuntungan, di antaranya bisa upgrade skill baru lewat berbagai webinar, koneksi makin luas,
+                            bahkan bisa dapat INCENTIVE FEE atau uang insentif!
+                        </p>
+                        <br>
+                        <p>
+                            Seru toh! Ayo Pace Mace! Tunggu apa lagi?
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Tampilan Program Promo -->
+
+    <!-- Tampilan baku bantu -->
+    <div class="content-baku-bantu pt-3 pb-4" id="bantu" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 baku-bantu">
+                    <p class="text-center" style="font-size: 18px; font-weight: bold;">BAKU BANTU</p>
+                    <strong>Pilih kategori info yang Pace Mace paling ingin tahu untuk kitong taruh di halaman
+                        utama!</strong>
+                    <ul class="list-group list-group-flush pt-3">
+                        <li class="list-group-item">Produk unggulan</li>
+                        <li class="list-group-item">Paket paling murah</li>
+                        <li class="list-group-item">Info Kemudahan</li>
+                        <li class="list-group-item">Pilihan lain</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 baku-bantu">
+                    <p class="text-center" style="font-size: 18px; font-weight: bold;">INDIHOME PAPUA MAJU</p>
+                    <strong>Pace Mace, “bantu kitong bantu Pace Mace” untuk sebar energi positif ke orang banyak dan
+                        menangkan hadiah menarik sebanyak-banyaknya!</strong>
+                    <div class="pt-2">
+                        <div class="row" style="padding-bottom: 0; margin-bottom: 0;">
+                            <span>
+                                <img src="assets/img/instagram.png" width="20px" height="20px">
+                            </span>
+                            <a href="https://www.instagram.com/indihome_papua2020/" target="_blank"
+                                style="margin-left: 5px; text-decoration: none;">@indihome_papua2020</a>
+                        </div>
+                        <div class="row" style="padding-top: 0; margin-top: 0;">
+                            <span>
+                                <img src="assets/img/facebook.png" width="20px" height="20px">
+                            </span>
+                            <a href="https://www.facebook.com/TelkomPapua01" target="_blank"
+                                style="margin-left: 5px; text-decoration: none;">Sobat Indihome Papua</a>
+                        </div>
+                    </div>
+                    <strong>Caranya : </strong>
+                    <ul>
+                        <li>Like halaman FB Sobat Indihome Papua dan/atau follow IG @indihome_papua2020</li>
+                        <li>Unggah postingan gambar asli milik Pace Mace ke Pace Mace pu FB dan IG, sertai caption yang
+                            paling menarik dan positif menurut Pace Mace</li>
+                        <li>Tandai IG atau FB Indihome Papua</li>
+                        <li>Gunakan taggar #IndihomePapuaMaju #IndihomePapua #SayaPapuaPeduli #PapuaPeduliIndonesia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Tampilan baku bantu -->
+
+    <!-- Tampokan Kontak -->
+    <div class="content-kontak pt-3 pb-4" id="kontak">
+        <div class="container">
+            <p class="text-center" style="font-size: 20px; font-weight: bold;">KONTAK</p>
+            <div class="row justify-content-center pt-4">
+                <div class="col-2 col-md-4">
+                    <img src="assets/img/logo.jpg" width="auto" height="250px" class="rounded">
+                </div>
+                <div class="col-10 col-md-8">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col">
+                                <textarea class="form-control" name="message" rows="3"
+                                    placeholder="Apa yang bisa kami bantu?"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col text-center">
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row-100"></div>
+        </div>
+    </div>
+    </div>
+    <!-- End Tampokan Kontak -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background-color: #e53e2c;">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="assets/img/7.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="assets/img/8.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="assets/img/9.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="assets/img/10.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: white;">
+            © 2020 Copyright
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- My Script -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var currentScroll = window.pageYOffset;
+            if (currentScroll >= 300) {
+                this.Progresbar()
+            }
+            if (currentScroll > 1800) {
+                this.Progresbar()
+            }
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.transition = "1s";
+                document.getElementById("navbar").style.top = "-70px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        function Progresbar() {
+            setTimeout(function () {
+
+                $('.progress .progress-bar').each(function () {
+                    var me = $(this);
+                    var perc = me.attr("data-percentage");
+
+                    var current_perc = 0;
+
+                    var progress = setInterval(function () {
+                        if (current_perc >= perc) {
+                            clearInterval(progress);
+                        } else {
+                            current_perc += 10;
+                            me.css('width', (current_perc) + '%');
+                        }
+
+                        //me.text((current_perc) + '%');
+
+                    }, 50);
+
+                });
+
+            }, 100);
+        }
+
+        const navlink = document.querySelectorAll('.nav-link')
+
+        navlink.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+
+                link.classList.add("active");
+            })
+        })
+
+    </script>
+</body>
+
+</html>
